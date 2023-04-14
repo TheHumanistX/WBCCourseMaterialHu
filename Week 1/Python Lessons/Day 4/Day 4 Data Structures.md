@@ -140,7 +140,7 @@ To access elements in a dictionary, you can use the key in square brackets []. I
     person.clear()
     # person is now {}
 
-#### Copy, Update, and Dictionary Comprehensions
+#### Copy and Update
 
 `copy()` Returns a shallow copy of the dictionary.
 

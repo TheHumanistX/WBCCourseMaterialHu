@@ -24,8 +24,3 @@
 	* Increasing accessibility to all devices - 2m
 	* Designing for basic users first - 2m
 	* Adding advanced features without disrupting content - 1m
-
-### Web Development: Figma Components and Responsive Design - 20 minutes
-* Reusable Components
-* Responsive Designs
-* Applying UI Design Theory to Figma
