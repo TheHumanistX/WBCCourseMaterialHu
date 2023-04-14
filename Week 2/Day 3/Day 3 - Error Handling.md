@@ -1,6 +1,6 @@
 # Error Handling
 ## Lesson Objectives
-In this lesson, we will cover the fundamental concepts of error handling and exceptions in Python. We will learn about the different types of exceptions and how to catch and handle them using try, except, else, and finally blocks. 
+In this lesson, we will cover the fundamental concepts of error handling and exceptions in Python. We will learn about the different types of exceptions and how to catch and handle them using `try`, `except`, `else`, and `finally` blocks. 
 
 We will also explore how to implement error handling techniques in a simple Python project. By the end of this lesson, you should:
 

@@ -1,4 +1,4 @@
-Week 2: JavaScript
+Week 3: JavaScript
 
 Day 1: JavaScript Fundamentals
 
