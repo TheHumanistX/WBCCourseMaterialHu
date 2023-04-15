@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+    <title></title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="wrapper">
+
+        <div class="center">
+            <div class="titleControls">
+                <div id="controls">
+                    <h1>Flex-Direction</h1>
+                    <form class="radioGroup" onClick="updateDirection()">
+                        <div>
+                            <input type="radio" id="radioRow" name="flexdirection" value="row" checked="checked" />
+                            <label for="radioRow">Row</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="radioRowR" name="flexdirection" value="row-reverse" /> <label
+                                for="radioRowR">-Reverse</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="radioCol" name="flexdirection" value="column" /> <label
+                                for="radioCol">Column</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="radioColR" name="flexdirection" value="column-reverse" /> <label
+                                for="radioColR">-Reverse</label>
+                        </div>
+                    </form>
+                    <h1>Justify-Content</h1>
+                    <form class="radioGroup" onClick="updateJustify()">
+                        <div>
+                            <input type="radio" id="radioStart" name="justifyContent" value="flex-start"
+                                checked="checked" /> <label for="radioStart">Flex-Start</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="radioCenter" name="justifyContent" value="center" /> <label
+                                for="radioCenter">Center</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="radioEnd" name="justifyContent" value="flex-end" /> <label
+                                for="radioEnd">Flex-End</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="radioBetween" name="justifyContent" value="space-between" /> <label
+                                for="radioBetween">Space-Between</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="radioAround" name="justifyContent" value="space-around" /> <label
+                                for="radioAround">Space-Around</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="radioEvenly" name="justifyContent" value="space-evenly" /> <label
+                                for="radioEvenly">Space-Evenly</label>
+                        </div>
+                    </form>
+
+                    <h1>Align-Items</h1>
+                    <form class="radioGroup" onClick="updateAlign()">
+                        <div>
+                            <input type="radio" id="radioStartA" name="alignItems" value="flex-start"
+                                checked="checked" />
+                            <label for="radioStartA">Flex-Start</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="radioCenterA" name="alignItems" value="center" /> <label
+                                for="radioCenterA">Center</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="radioEndA" name="alignItems" value="flex-end" /> <label
+                                for="radioEndA">Flex-End</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="radioStretch" name="alignItems" value="stretch" /> <label
+                                for="radioStretch">Stretch</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="radioBaseline" name="alignItems" value="baseline" /> <label
+                                for="radioBaseline">Baseline</label>
+                        </div>
+                    </form>
+
+                    <h1>Align-Content</h1>
+                    <form class="radioGroup" onClick="updateAlignC()">
+                        <div>
+                            <input type="radio" id="radioStartAC" name="alignContent" value="flex-start"
+                                checked="checked" />
+                            <label for="radioStartAC">Flex-Start</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="radioCenterAC" name="alignContent" value="center" /> <label
+                                for="radioCenterAC">Center</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="radioEndAC" name="alignContent" value="flex-end" /> <label
+                                for="radioEndAC">Flex-End</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="radioStretchAC" name="alignContent" value="stretch" /> <label
+                                for="radioStretchAC">Stretch</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="radioSpaceBetweenAC" name="alignContent" value="space-between" />
+                            <label for="radioSpaceBetweenAC">Space-Between</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="radioSpaceAroundAC" name="alignContent" value="space-around" />
+                            <label for="radioSpaceAroundAC">Space-Around</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="radioSpaceEvenlyAC" name="alignContent" value="space-evenly" />
+                            <label for="radioSpaceEvenlyAC">Space-Evenly</label>
+                        </div>
+                    </form>
+
+                    <h1>Flex-Wrap</h1>
+                    <form class="radioGroup" onClick="updateWrap()">
+                        <div>
+                            <input type="radio" id="radioNoWrap" name="flexWrap" value="nowrap" checked="checked" />
+                            <label for="radioNoWrap">NoWrap</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="radioWrap" name="flexWrap" value="wrap" /> <label
+                                for="radioWrap">Wrap</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="radioWrapReverse" name="flexWrap" value="wrap-reverse" /> <label
+                                for="radioWrapReverse">Wrap-Reverse</label>
+                        </div>
+                    </form>
+
+                    <h1>Gap</h1>
+                    <div class="radioGroup numberGroup">
+                        <div>
+                            <label for="numberGap">Gap</label>
+                            <input type="number" id="numberGap" name="flexGap" min="0" />px
+                        </div>
+
+                    </div>
+
+                    <h1>Flex Grow</h1>
+                    <form class="radioGroup numberGroup">
+                        <div>
+                            <label for="numberBox1Grow">Box 1</label>
+                            <input type="number" id="numberBox1Grow" name="flexGrow1" min="0" />
+                        </div>
+                        <div>
+                            <label for="numberBox2Grow">Box 2</label>
+                            <input type="number" id="numberBox2Grow" name="flexGrow2" min="0" />
+                        </div>
+                        <div>
+                            <label for="numberBox3Grow">Box 3</label>
+                            <input type="number" id="numberBox3Grow" name="flexGrow3" min="0" />
+                        </div>
+                        <div>
+                            <label for="numberBox4Grow">Box 4</label>
+                            <input type="number" id="numberBox4Grow" name="flexGrow4" min="0" />
+                        </div>
+                        <div>
+                            <label for="numberBox5Grow">Box 5</label>
+                            <input type="number" id="numberBox5Grow" name="flexGrow5" min="0" />
+                        </div>
+                        <div>
+                            <label for="numberBox6Grow">Box 6</label>
+                            <input type="number" id="numberBox6Grow" name="flexGrow6 " min="0" />
+                        </div>
+                    </form>
+
+                    <h1>Flex Shrink</h1>
+                    <form class="radioGroup numberGroup">
+                        <div>
+                            <label for="numberBox1Shrink">Box 1</label>
+                            <input type="number" id="numberBox1Shrink" name="flexShrink1" min="0" />
+                        </div>
+                        <div>
+                            <label for="numberBox2Shrink">Box 2</label>
+                            <input type="number" id="numberBox2Shrink" name="flexShrink2" min="0" />
+                        </div>
+                        <div>
+                            <label for="numberBox3Shrink">Box 3</label>
+                            <input type="number" id="numberBox3Shrink" name="flexShrink3" min="0" />
+                        </div>
+                        <div>
+                            <label for="numberBox4Shrink">Box 4</label>
+                            <input type="number" id="numberBox4Shrink" name="flexShrink4" min="0" />
+                        </div>
+                        <div>
+                            <label for="numberBox5Shrink">Box 5</label>
+                            <input type="number" id="numberBox5Shrink" name="flexShrink5" min="0" />
+                        </div>
+                        <div>
+                            <label for="numberBox6Shrink">Box 6</label>
+                            <input type="number" id="numberBox6Shrink" name="flexShrink6 " min="0" />
+                        </div>
+                    </form>
+
+                    <h1>Flex Order</h1>
+                    <form class="radioGroup numberGroup">
+                        <div>
+                            <label for="numberBox1Order">Box 1</label>
+                            <input type="number" id="numberBox1Order" name="flexOrder1" min="0" />
+                        </div>
+                        <div>
+                            <label for="numberBox2Order">Box 2</label>
+                            <input type="number" id="numberBox2Order" name="flexOrder2" min="0" />
+                        </div>
+                        <div>
+                            <label for="numberBox3Order">Box 3</label>
+                            <input type="number" id="numberBox3Order" name="flexOrder3" min="0" />
+                        </div>
+                        <div>
+                            <label for="numberBox4Order">Box 4</label>
+                            <input type="number" id="numberBox4Order" name="flexOrder4" min="0" />
+                        </div>
+                        <div>
+                            <label for="numberBox5Order">Box 5</label>
+                            <input type="number" id="numberBox5Order" name="flexOrder5" min="0" />
+                        </div>
+                        <div>
+                            <label for="numberBox6Order">Box 6</label>
+                            <input type="number" id="numberBox6Order" name="flexOrder6 " min="0" />
+                        </div>
+                    </form>
+
+                    <h1>Flex Basis</h1>
+                    <form class="radioGroup numberGroup">
+                        <div>
+                            <label for="numberBox1Basis">Box 1</label>
+                            <input type="number" id="numberBox1Basis" name="flexBasis1" min="0" />px
+                        </div>
+                        <div>
+                            <label for="numberBox2Basis">Box 2</label>
+                            <input type="number" id="numberBox2Basis" name="flexBasis2" min="0" />px
+                        </div>
+                        <div>
+                            <label for="numberBox3Basis">Box 3</label>
+                            <input type="number" id="numberBox3Basis" name="flexBasis3" min="0" />px
+                        </div>
+                        <div>
+                            <label for="numberBox4Basis">Box 4</label>
+                            <input type="number" id="numberBox4Basis" name="flexBasis4" min="0" />px
+                        </div>
+                        <div>
+                            <label for="numberBox5Basis">Box 5</label>
+                            <input type="number" id="numberBox5Basis" name="flexBasis5" min="0" />px
+                        </div>
+                        <div>
+                            <label for="numberBox6Basis">Box 6</label>
+                            <input type="number" id="numberBox6Basis" name="flexBasis6 " min="0" />px
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+            <div>
+                <h1>Flexbox - Playground</h1>
+
+                <div id="exampleContainer">
+
+                    <div class="example" id="example1">Box 1</div>
+                    <div class="example" id="example2">Box 2</div>
+                    <div class="example" id="example3">Box 3</div>
+                    <div class="example" id="example4">Box 4</div>
+                    <div class="example" id="example5">Box 5</div>
+                    <div class="example" id="example6">Box 6</div>
+
+                </div>
+            </div>
+
+
+
+        </div>
+
+
+
+    </div>
+    <script src="script.js" async defer></script>
+</body>
+
+</html>

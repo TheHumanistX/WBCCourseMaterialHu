@@ -1,0 +1,206 @@
+/* CSS RESET */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    line-height: 1.5;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+/* Site CSS Code */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato');
+
+body,
+html {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background: #191654;
+    color: #FFF;
+}
+
+#wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    flex-direction: column;
+}
+
+#controls {
+    padding: 2em;
+    background-color: #66BB6A;
+    font-weight: bold;
+    border-radius: 0.4em;
+    margin: 1em;
+}
+
+#controls h1 {
+    font-size: 1.2em;
+
+}
+
+#controls input[type="radio"] {
+    display: none;
+}
+
+#controls input[type="text"] {
+    border-radius: 2em;
+}
+
+.radioGroup {
+    border: solid 0.1em rgba(255, 255, 255, 0.2);
+    border-radius: 4em;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.radioGroup label {
+    display: flex;
+    align-items: center;
+    padding: 0.5em;
+    flex: 1;
+    min-height: 2em;
+    border-radius: 4em;
+}
+
+
+.radioGroup input[type="radio"]:checked+label {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.radioGroup input[type="radio"]:not+label {
+    background-color: none;
+}
+
+input[type=number] {
+    width: 40px;
+    border-radius: 5px;
+}
+
+.numberGroup {
+    justify-content: space-around;
+    padding-bottom: 10px;
+}
+
+#exampleContainer {
+    margin: 1em;
+    display: flex;
+    flex-direction: row;
+    border: 5px solid #FFF;
+    height: 30vw;
+    width: 55vw;
+    align-items: flex-start;
+    resize: both;
+    overflow: auto;
+}
+
+.example {
+    justify-content: center;
+    font-weight: bold;
+    color: #FFF;
+    border-color: #FFF;
+    border-style: solid;
+    border-width: 0px;
+    min-height: 4em;
+    width: 8em;
+    display: flex;
+    align-items: center;
+
+}
+
+#example1 {
+    background-color: #2ecc71;
+}
+
+#example2 {
+    background-color: tomato;
+    min-height: 8em;
+}
+
+#example3 {
+    background-color: turquoise;
+}
+
+#example4 {
+    background-color: darkorchid;
+}
+
+#example5 {
+    background-color: gold;
+    min-height: 8em;
+}
+
+#example6 {
+    background-color:hotpink;
+}
+
+
+span {
+    display: inline-block;
+    width: 6em;
+    margin: 0.1em;
+}
+
+a {
+
+    color: #FFF;
+}
+
+.center {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+}
