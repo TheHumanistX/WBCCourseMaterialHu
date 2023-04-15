@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+</head>
+
+<body>
+    <header>
+            <h2>HEADER</h2>   
+        <nav>
+            Navigation:
+            <a href="#">Home</a> 
+            <a href="#">Blog</a> 
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+    <hr>
+    <br><br>
+    <main>
+        <h2>MAIN</h2>
+        <br>
+        <div>
+            
+            <form action="submission_action.php" method="POST">
+                
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" placeholder="Enter Username" required><br><br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter Password" minlength="8" maxlength="16" required><br><br>
+                <label for="email">EMail:</label>
+                <input type="email" id="email" name="email" required>
+                <br><br>
+                
+                <label for="options">Checkboxes: </label>
+                <label for="option1">Option 1:</label>
+                <input type="checkbox" id="option1" name="options" value="1">
+                <label for="option2">Option 2:</label>
+                <input type="checkbox" id="option2" name="options" value="2"><br><br>
+
+                <label for="choice">Radio Buttons:</label>
+                <label for="choice1">Choice 1:</label>
+                <input type="radio" id="choice1" name="choice" value="1">
+                <label for="choice2">Choice 2:</label>
+                <input type="radio" id="choice2" name="choice" value="2"><br><br>
+
+                
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" ><br><br>
+                <label for="time">Time:</label>
+                <input type="time" id="time" name="time" ><br><br>
+
+                
+                <label for="dropdown">Select an option:</label>
+                <select id="dropdown" name="dropdown">
+                    <option value="">Please select an option</option>
+                    <option value="option1">Option 1</option>
+                    <option value="option2">Option 2</option>
+                    <option value="option3">Option 3</option>
+                </select><br><br>
+                
+                <label for="comment">Comment:</label><br>
+                <textarea id="comment" name="comment rows="4" cols="">
+                </textarea>
+                <br><br>
+                
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </form>
+        </div>
+        <br>
+        <h2>END MAIN</h2>
+    </main>
+    <br><br>
+    <hr>
+    <footer>
+       <h2>FOOTER</h2>
+       <br>
+        Copyright 2023
+    </footer>
+</body>
+
+</html>

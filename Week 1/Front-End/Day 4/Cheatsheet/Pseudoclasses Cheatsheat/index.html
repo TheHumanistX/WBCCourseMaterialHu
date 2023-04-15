@@ -1,0 +1,702 @@
+<html>
+
+<head>
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="header__div">
+            <h1>PseudoClasses</h1>
+        </div>
+    </header>
+    <div class="wrapper">
+        <div class="wrapper__row">
+            <div class="wrapper__filler-side"></div>
+            <div class="info__container">
+                <div class="info__container-title">
+                    <h2> :hover, :active, :focus for interactive elements </h2>
+                </div>
+                <div class="info__container-content">
+                    <div class="info__container-content__row-definition">
+
+                        :hover - apply styles when the user's mouse is hovering over an element.
+
+                    </div>
+                    <div class="info__container-content__row-example">
+                        <div class="div__text-hover tooltip">
+                            <span class="text__hover">Hover Me!</span>
+                            <span class="tooltiptext hover right">
+                                <pre>
+                                    <code>
+    HTML:
+        &lt;span class="text__hover"&gt;Hover me!&lt;/span&gt;    
+    CSS:
+        .text__hover:hover {
+            color: #6fd2ff;
+        }   
+                                    </code>
+                                </pre>
+                            </span>
+                        </div>
+                        <div class="tooltip">
+                            <button class="button button__hover">Hover me too!</button>
+                            <span class="tooltiptext hover right">
+                                <pre>
+                                    <code>
+    HTML:
+        &lt;button class="button__hover"&gt;Hover me too!&lt;/button&gt;    
+    CSS:
+        .button__hover:hover {
+            background-color: #41b14f;
+        }   
+                                    </code>
+                                </pre>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="info__container-content-breaker"></div>
+                    <div class="info__container-content__row-definition">
+
+                        <span id="active">:active - apply styles when the user is actively interacting with an element, such as clicking on a button.</span>
+
+                    </div>
+                    <div class="info__container-content__row-example">
+                        <div class="tooltip">
+                            <a href="#" class="link__active">Click Me!</a>
+                            <span class="tooltiptext hover right">
+                                <pre>
+                                    <code>
+    HTML:
+        &lt;a href="#" class="link__active"&gt;Click Me!&lt;/a&gt;    
+    CSS:
+        .link__active:active {
+            text-decoration: none;
+            color: #e5e5e5;
+        }   
+                                    </code>
+                                </pre>
+                            </span>
+                        </div>
+                        <div class="tooltip">
+                            <button class="button button__active">Click me too!</button>
+                            <span class="tooltiptext hover right">
+                                <pre>
+                                    <code>
+    HTML:
+        &lt;button class="button__active"&gt;Click me too!&lt;/button&gt;    
+    CSS:
+        .button__active:active {
+            outline: 4px dotted #DC143C;
+            background-color: #41b14f;
+        }   
+                                    </code>
+                                </pre>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="info__container-content-breaker"></div>
+                    <div class="info__container-content__row-definition">
+
+                        :focus - targets an element when it has focus, such as when a user clicks on an input field.
+
+                    </div>
+                    <div class="info__container-content__row-example">
+                        <div><label for="input__focus">Form Input:</label> </div>
+                        <div class="tooltip">
+                            <input type="text" id="input__focus" class="input__focus">
+                            <span class="tooltiptext hover right">
+                                <pre>
+                                    <code>
+    HTML:
+        &lt;input type="text" id="input__focus" class="input__focus"&gt;    
+    CSS:
+        .input__focus:focus {
+            background-color: rgb(15, 180, 255);
+            outline: 2px solid #41b14f;
+        }   
+                                    </code>
+                                </pre>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="info__container">
+                <div class="info__container-title">
+                    <h2>:link, :visited, :target for link states</h2>
+                </div>
+                <div class="info__container-content">
+                    <div class="info__container-content__row-definition">
+
+                        <span id="link">:link - targets unvisited links in order to apply styles.</span>
+
+                    </div>
+                    <div class="info__container-content__row-example">
+                        <div class="div__unvisited-link tooltip">
+                            <a href="#" class="link">A Link</a>
+                            <span class="tooltiptext hover left">
+                                <pre>
+                                    <code>
+    HTML:
+        &lt;a href="#" class="link"&gt;A Link&lt;a&gt;     
+    CSS:
+        .link:link {
+            text-decoration: none;
+            color: #0fb4ff;
+        }   
+                                    </code>
+                                </pre>
+                            </span>
+                        </div>
+                        <div class="tooltip">
+                            <a href="#" class="link">Another Link</a>
+                            <span class="tooltiptext hover left">
+                                <pre>
+                                    <code>
+    HTML:
+        &lt;a href="#" class="link"&gt;Another Link&lt;a&gt;    
+    CSS:
+        .link:link {
+            text-decoration: none;
+            color: #0fb4ff;
+        }   
+                                    </code>
+                                </pre>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="info__container-content-breaker"></div>
+                    <div class="info__container-content__row-definition">
+
+                        :visited - targets links already visited by the user in order to apply styles.
+
+                    </div>
+                    <div class="info__container-content__row-example">
+                        <div class="div__visited-link tooltip">
+                            <a href="#" class="visited-link1 link">A Link</a>
+                            <span class="tooltiptext hover left">
+                                <pre>
+                                    <code>
+    HTML:
+        &lt;a href="#top" class="visited-link1"&gt;A Link&lt;a&gt;     
+    CSS:
+        .visited-link1:visited {
+            color: #41b14f;
+        }   
+                                    </code>
+                                </pre>
+                            </span>
+                        </div>
+                        <div class="div__visited-link tooltip">
+                            <a href="#top" class="visited-link2 link">Another Link</a>
+                            <span class="tooltiptext hover left">
+                                <pre>
+                                    <code>
+    HTML:
+        &lt;a href="#top" class="visited-link2"&gt;Another Link&lt;a&gt;     
+    CSS:
+        .visited-link2:visited {
+            color: #e5e5e5;
+        }   
+                                    </code>
+                                </pre>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="info__container-content-breaker"></div>
+                    <div class="info__container-content__row-definition">
+
+                        :targeted - targets sections of code marked by 'id' and uses '#' anchor links in order to apply styles.
+
+                    </div>
+                    <div class="info__container-content__row-example">
+                        <div class="div__targeted-link tooltip">
+                            <a href="#link" class="link">Link to :link</a>
+                            <span class="tooltiptext hover left">
+                                <pre>
+                                    <code>
+    HTML above in :link section (must set id='link' so we can refer to it as a target): 
+        &lt;span id="link"&gt;:link - targets unvisited links in order to apply styles.&lt;/span&gt;    
+    
+    HTML:
+        &lt;a href="#link"&gt;Link to :link&lt;a&gt;     
+    CSS:
+        #link:target {
+            background-color: #ff0000;
+        }   
+                                    </code>
+                                </pre>
+                            </span>
+                        </div>
+                        <div class="div__targeted-link tooltip">
+                            <a href="#active" class="link">Link to :active</a>
+                            <span class="tooltiptext hover left">
+                                <pre>
+                                    <code>
+    HTML above in :active section (must set id='active' so we can refer to it as a target): 
+        &lt;span id="active"&gt;:active - apply styles when the user is actively interacting with an element, such as clicking on a button.&lt;/span&gt;    
+    HTML:
+        &lt;a href="#active"&gt;Link to :active&lt;a&gt;     
+    CSS:
+        #active:target {
+            background-color: #ffff00;    
+        }   
+                                    </code>
+                                </pre>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper__filler-side"></div>
+        </div>
+        <div class="wrapper__row">
+            <div class="wrapper__filler-side"></div>
+            <div class="info__container">
+                <div class="info__container-title">
+                    <h2> :enabled, :disabled, and :checked for form control states</h2>
+                </div>
+                <div class="info__container-content">
+                    <div class="info__container-content__row-definition">
+
+                        :enabled - targets enabled form elements.
+
+                    </div>
+                    <div class="info__container-content__row-example">
+                        <div><label for="enabled-input">Enabled: </label></div>
+                        <div class="tooltip">
+                            <input type="text" id="enabled-input" class="text-input">
+                            <span class="tooltiptext hover right">
+                                <pre>
+                                    <code>
+    HTML:
+        &lt;input type="text" id="enabled-input" class="text-input"&gt;    
+    CSS:
+        .text-input:enabled {
+            border: 2px solid #ffff00;
+        }
+
+        .text-input:enabled:focus {
+            outline: 2px solid #ffff00;
+        }   
+                                    </code>
+                                </pre>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="info__container-content-breaker"></div>
+                    <div class="info__container-content__row-definition">
+
+                        :disabled - targets disabled form elements.
+
+                    </div>
+                    <div class="info__container-content__row-example">
+                        <div><label for="disabled-input">Disabled: </label></div>
+                        <div class="tooltip">
+                            <input type="text" id="disabled-input" class="text-input" disabled>
+                            <span class="tooltiptext hover right">
+                                <pre>
+                                    <code>
+    HTML:
+        &lt;input type="text" id="disabled-input" class="text-input"&gt;    
+    CSS:
+        .text-input:disabled {
+            border: 2px solid #ff0000;
+        }   
+                                    </code>
+                                </pre>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="info__container-content-breaker"></div>
+                    <div class="info__container-content__row-definition">
+
+                        :checked - targets checked form elements, like checkboxes and radio buttons.
+
+                    </div>
+                    <div class="info__container-content__row-example no-border">                        
+                        <div class="tooltip">
+                            <p class="ouline-p">
+                                <input type="checkbox" id="checkbox1"> &nbsp;&nbsp;<label for="checkbox1">Box 1</label>
+                            </p>
+                            <span class="tooltiptext hover right">
+                                <pre>
+                                    <code>
+    HTML:
+        &lt;input type="checkbox" id="checkbox1"&gt;&lt;label for="checkbox1"&gt;&lt;/label&gt;   
+    CSS:
+        input[type=checkbox]:checked + label {
+            color: #41b14f;
+            border: 1px solid red;
+        }   
+                                    </code>
+                                </pre>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="info__container-content__row-example">
+                        <div class="tooltip">
+                            <input type="checkbox" id="checkbox2"> &nbsp;&nbsp;<label for="checkbox2">Box 2</label>
+                            <span class="tooltiptext hover right">
+                                <pre>
+                                    <code>
+    HTML:        
+        &lt;input type="checkbox" id="checkbox2"&gt;&lt;label for="checkbox2"&gt;&lt;/label&gt;    
+    CSS:
+        input[type=checkbox]:checked + label {
+            color: #41b14f;
+            border: 1px solid red;
+        }   
+                                    </code>
+                                </pre>
+                            </span>
+                        </div>
+                    </div>      
+                </div>
+            </div>
+            <div class="info__container">
+                <div class="info__container-title">
+                    <h2> :required, :optional, and :valid/:invalid for form validation</h2>
+                </div>
+                <div class="info__container-content">
+                    <div class="info__container-content__row-definition">
+
+                        :required - targets form elements with the required attribute.
+
+                    </div>
+                    <div class="info__container-content__row-example">
+                        <div><label for="required-field">Required: </label></div>
+                        <div class="tooltip">
+                            <input type="text" id="required-field" class="text-input" required>
+                            <span class="tooltiptext hover left">
+                                <pre>
+                                    <code>
+    HTML:        
+        &lt;input type="text" id="required-field" class="text-input" required&gt;          
+    CSS:
+        .text-input:required {
+            border: 2px solid #800080;
+            background-color: rgb(65, 177, 79, .5);
+        }
+
+        .text-input:required:focus {
+            outline: 2px solid #800080;
+        }   
+                                    </code>
+                                </pre>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="info__container-content-breaker"></div>
+                    <div class="info__container-content__row-definition">
+
+                        :optional - targets form elements without the required attribute.
+
+                    </div>
+                    <div class="info__container-content__row-example">
+                        <div><label for="optional-field">Optional: </label></div>
+                        <div class="tooltip">
+                            <input type="text" id="optional-field" class="text-input optional">
+                            <span class="tooltiptext hover left">
+                                <pre>
+                                    <code>
+    HTML:        
+        &lt;input type="text" id="optional-field" class="text-input optional"&gt;          
+    CSS:
+        .text-input.optional:optional {
+            border: 2px solid #ff69b4 ;
+        }
+
+        .text-input.optional:optional:focus {
+            outline: 2px solid #ff69b4 ;
+        }   
+                                    </code>
+                                </pre>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="info__container-content-breaker"></div>
+                    <div class="info__container-content__row-definition">
+
+                        :valid/invalid - target form elements based on their validation status.
+
+                    </div>
+                    <div class="info__container-content__row-example">
+                        <div><label for="email">E-Mail:</label></div>
+                        <div class="tooltip">
+                            <input type="email" id="email">
+                            <span class="tooltiptext hover left">
+                                <pre>
+                                    <code>
+    HTML:        
+        &lt;input type="email" id="email"&gt;          
+    CSS:
+        input[type=email]:invalid {
+            outline: 2px solid #ff0000;
+        }   
+                                    </code>
+                                </pre>
+                            </span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="wrapper__filler-side"></div>
+        </div>
+        <div class="wrapper__row">
+            <div class="wrapper__filler-side"></div>
+            <div class="info__container solo">
+                <div class="info__container-title">
+                    <h2> :first-child, :last-child, :nth-child(), and :nth-last-child() for child elements</h2>
+                </div>
+                <div class="info__container-content">
+                    <div class="info__container-content__row-definition">
+                        :first-child - targets the first element among a group of sibling elements.<br>
+                        :last-child - targets the last element among a group of sibling elements.<br>                        
+                    </div>
+                    <div class="info__container-content__row-example">
+                        <div class="tooltip">
+                            <ol class="firstlast">
+                                <li>Item 1 (first child)</li>
+                                <li>Item 2</li>
+                                <li>Item 3</li>
+                                <li>Item 4 (last child)</li>
+                            </ol>
+                            <span class="tooltiptext hover left">
+                                <pre>
+                                    <code>
+    HTML:        
+        &lt;ol class="firstlast">
+            &lt;li&gt;Item 1 (first child)&lt;/li&gt;   
+            &lt;li&gt;Item 2&lt;/li&gt;
+            &lt;li&gt;Item 3&lt;/li&gt;
+            &lt;li&gt;Item 4 (last child)&lt;/li&gt;    
+        &lt;/ol>          
+    CSS:
+        .firstlast li:first-child {
+            background-color: rgb(255, 255, 0, .5);   
+        }
+
+        .firstlast li:last-child {
+            background-color: rgb(255, 0, 0, .5);   
+        }  
+                                    </code>
+                                </pre>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="info__container-content-breaker"></div>
+                    <div class="info__container-content__row-definition">
+                        :nth-child - targets elements based on their position among a group of siblings.<br>
+                        :nth-last-child - targets elements based on their position among a group of siblings but counts
+                        from the end.<br>
+                    </div>
+                    <div class="info__container-content__row-example">                        
+                        <div class="tooltip">
+                            <ol class="nthchild">
+                                <li>Item 1</li>
+                                <li>Item 2</li>
+                                <li>Item 3</li>
+                                <li>Item 4</li>
+                                <li>Item 5</li>
+                                <li>Item 6</li>
+                                <li>Item 7</li>
+                                <li>Item 8</li>
+                            </ol>
+                            <span class="tooltiptext hover left">
+                                <pre>
+                                    <code>
+    HTML:        
+        &lt;ol class="nthchild">
+            &lt;li&gt;Item 1&lt;/li&gt;   
+            &lt;li&gt;Item 2&lt;/li&gt;
+            &lt;li&gt;Item 3&lt;/li&gt;
+            &lt;li&gt;Item 4&lt;/li&gt;
+            &lt;li&gt;Item 5&lt;/li&gt;   
+            &lt;li&gt;Item 6&lt;/li&gt;
+            &lt;li&gt;Item 7&lt;/li&gt;
+            &lt;li&gt;Item 8&lt;/li&gt;       
+        &lt;/ol>          
+    CSS:
+        .nthchild li:nth-child(even) {
+            border: 1px solid #ffff00;
+        }
+
+        .nthchild li:nth-child(3) {
+            background-color: rgb(255,0,0,.5);
+        }
+
+        .nthchild li:nth-last-child(2) {
+            background-color: rgb(65, 177, 79, .5);   
+        }  
+                                    </code>
+                                </pre>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper__filler-side"></div>
+        </div>
+        <div class="wrapper__row">
+            <div class="wrapper__filler-side"></div>
+            <div class="info__container solo">
+                <div class="info__container-title">
+                    <h2>:first-of-type, :last-of-type, :nth-of-type(), and :nth-last-of-type() for specific element types</h2>
+                    <h2>:not for negation</h2>
+                </div>
+                <div class="info__container-content">
+                    <div class="info__container-content__row-definition">
+                        :first-of-type - targets the first element of its type among its siblings.<br>
+                        :last-of-type - targets the last element of its type among its siblings.<br>                        
+                    </div>
+                    <div class="info__container-content__row-example">
+                        <div class="tooltip firstlasttype">
+                            <p>This is the first paragraph</p>
+                            <p>This is the second paragraph</p>
+                            <p>This is the third paragraph</p>
+                            <p>This is the fourth paragraph</p>
+                            <p>This is the fifth paragraph</p>
+                            <span class="tooltiptext hover left">
+                                <pre>
+                                    <code>
+    HTML:        
+        &lt;div class="firstlasttype"&gt;
+            &lt;p&gt;This is the first paragraph&lt;/p&gt;
+            &lt;p&gt;This is the second paragraph&lt;/p&gt;    
+            &lt;p&gt;This is the third paragraph&lt;/p&gt;
+            &lt;p&gt;This is the fourth paragraph&lt;/p&gt;
+            &lt;p&gt;This is the fifth paragraph&lt;/p&gt;
+        &lt;/div&gt;
+    CSS:
+        .firstlasttype p:first-of-type {
+            font-style: italic;
+            text-decoration: underline;
+            color: #41b14f;
+        }
+
+        .firstlasttype p:last-of-type {
+            font-weight: 900;
+            font-size: 2rem;
+            color: #ff69b4;
+        } 
+                                    </code>
+                                </pre>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="info__container-content-breaker"></div>
+                    <div class="info__container-content__row-definition">
+                        :nth-of-type - targets elements of a specific type based on a specified pattern. For example, to target every odd p element within a div.<br>
+                        :nth-last-of-type - similar to :nth-of-type(), but it counts from the last element of the specified type. For example, to target the second to last p element within a div.<br>
+                    </div>
+                    <div class="info__container-content__row-example">                        
+                        <div class="tooltip nthlasttype">
+                            <p>This is the first paragraph</p>
+                            <p>This is the second paragraph</p>
+                            <p>This is the third paragraph</p>
+                            <p>This is the fourth paragraph</p>
+                            <p>This is the fifth paragraph</p>
+                            <p>This is the sixth paragraph</p>
+                            <p>This is the seventh paragraph</p>
+                            <p>This is the eighth paragraph</p>
+                            <p>This is the ninth paragraph</p>
+                            <p>This is the tenth paragraph</p>
+                            <span class="tooltiptext hover left">
+                                <pre>
+                                    <code>
+    HTML:        
+        &lt;div class="nthlasttype"&gt;
+            &lt;p&gt;This is the first paragraph&lt;/p&gt;
+            &lt;p&gt;This is the second paragraph&lt;/p&gt;    
+            &lt;p&gt;This is the third paragraph&lt;/p&gt;
+            &lt;p&gt;This is the fourth paragraph&lt;/p&gt;
+            &lt;p&gt;This is the fifth paragraph&lt;/p&gt;
+            &lt;p&gt;This is the sixth paragraph&lt;/p&gt;
+            &lt;p&gt;This is the seventh paragraph&lt;/p&gt;    
+            &lt;p&gt;This is the eighth paragraph&lt;/p&gt;
+            &lt;p&gt;This is the ninth paragraph&lt;/p&gt;
+            &lt;p&gt;This is the tenth paragraph&lt;/p&gt;
+        &lt;/div&gt;         
+    CSS:
+        .nthlasttype p:nth-of-type(odd) {
+            text-decoration: line-through;
+        }
+
+        .nthlasttype p:nth-of-type(-n + 3) {
+            color: #ff69b4;
+        }
+
+        .nthlasttype p:nth-last-of-type(-n + 3) {
+            color: #41b14f;
+        }
+
+        .nthlasttype p:nth-last-of-type(4) {
+            font-weight: 700;
+            font-style:italic;
+            text-decoration: underline overline;
+        } 
+                                    </code>
+                                </pre>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="info__container-content-breaker"></div> 
+                    <div class="info__container-content__row-definition">
+                        :not() - used to apply styles to elements that do not match the specified selector. This can be particularly useful for excluding specific elements from a general style rule.
+                    </div>
+                    <div class="info__container-content__row-example">                        
+                        <div class="tooltip div-negation">
+                            <p>This is the first paragraph</p>
+                            <p class="no-border no-color no-underline">This is the second paragraph</p>
+                            <p>This is the third paragraph</p>
+                            <p class="no-color no-underline">This is the fourth paragraph</p>
+                            <p class="no-underline">This is the fifth paragraph</p>
+                            <p class="no-border no-underline">This is the sixth paragraph</p>
+                            <p class="no-color">This is the seventh paragraph</p>
+                            <p>This is the eighth paragraph</p>
+                            <p class="no-border">This is the ninth paragraph</p>
+                            <p class="no-underline">This is the tenth paragraph</p>
+                            <span class="tooltiptext hover left">
+                                <pre>
+                                    <code>
+    HTML:        
+        &lt;div class="nthlasttype"&gt;
+            &lt;p&gt;This is the first paragraph&lt;/p&gt;
+            &lt;p class="no-border no-color no-underline"&gt;This is the second paragraph&lt;/p&gt;    
+            &lt;p&gt;This is the third paragraph&lt;/p&gt;
+            &lt;p class="no-color no-underline"&gt;This is the fourth paragraph&lt;/p&gt;
+            &lt;p class="no-underline"&gt;This is the fifth paragraph&lt;/p&gt;
+            &lt;p class="no-border no-underline"&gt;This is the sixth paragraph&lt;/p&gt;
+            &lt;p class="no-color"&gt;This is the seventh paragraph&lt;/p&gt;    
+            &lt;p&gt;This is the eighth paragraph&lt;/p&gt;
+            &lt;p class="no-border"&gt;This is the ninth paragraph&lt;/p&gt;
+            &lt;p class="no-underline"&gt;This is the tenth paragraph&lt;/p&gt;
+        &lt;/div&gt;         
+    CSS:
+        .div-negation p:not(.no-border) {
+            border: 1px solid #ff69b4;
+        }
+
+        .div-negation p:not(.no-color) {
+            color: #41b14f;
+        }
+
+        .div-negation p:not(.no-underline) {
+            text-decoration: underline;
+        } 
+                                    </code>
+                                </pre>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper__filler-side"></div>
+        </div>
+    </div>
+</body>
+
+</html>

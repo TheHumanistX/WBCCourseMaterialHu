@@ -1,0 +1,27 @@
+Week 1 Day 1 Lab Requirements:
+
+- Title Heading with Your Discord Name
+- About Me section with information about you
+- Ordered list titled 'Goals For The Course' that lists three personal goals you have for this Course
+- Unordered list titled 'Contact Info' that lists one or two methods to contact you as hyperlinks
+- Centered Top 3 Movies section
+  - Image of either movie cover or movie poster.
+  - Image is link to IMDB page of that movie
+  - Images stacked vertically
+- Centered table that has header covering four columns, titled 'My First Table'. Table border set to "1".
+    - Two rows in table body
+    - Each row has four cells
+    - First row cells as follows: 'Bold Text', 'Italic Text', 'Underlined Text', 'Strikethrough Text'. Each one formatted to represent what they say.
+    -Second row cells as follows: 'Strong Text', 'Emphasized Text', 'Subscript Text', 'Superscript Text'. Again each one formatted to represent what they say.  Only apply the formatting to the word 'Text' for subscript and superscript.
+
+- Centered table that has a header covering two columns, titled 'Top 3'. Table border set to "1".
+- Table has six rows in the table body.
+- First and Fourth row have two cells, other rows have one.
+- First cell in First and Fourth rows must cover three rows.
+- First cell in First row has text 'TV Shows'
+- First cell in Fourth row has text 'Books'
+- Second cell in the first row, and only cell in the second and third rows will be your top 3 favorite TV Shows.
+- Second cell in the fourth row and only cell in the fifth and sixth rows will be your top 3 favorite books.
+
+- Link at bottom of page that sends you to the top of the page.
+- Link at the top of the page that sends you back down to the link at the bottom of the page.
