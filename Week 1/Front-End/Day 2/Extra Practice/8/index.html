@@ -1,0 +1,52 @@
+<!-- 
+  Create a pricing table for a subscription-based service with three plans and pricing tiers. Use HTML tables and CSS to style the table and ensure that it is easy to read and visually appealing. 
+    - Table has a width of 100%, border of 1, centered text, font size is 18px, border is collapsed.
+    - Table header has a light grey background
+    - Rows have a height of 40px
+    - columns are 10%, 10%, and 80% of the table width
+    - You have three plans: Basic, Pro, Premium
+      - They are priced: $9.99/month, $19.99/month, $49.99/month, respectively
+    - Center text horizontally.
+    - Plan names in bold (not using `<b>`)
+    - Prices in italics (not using `<i>`)
+    - Features cells just have random lorem ipum line in each 
+  -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+  <title>W1D2 Problem 7</title>
+</head>
+
+<body>
+  <table border="1" style="width: 100%; text-align: center; font-size: 16px; border-collapse: collapse;">
+    <thead>
+      <tr style="background-color: #f2f2f2;  height: 40px;">
+        <th style="width: 10%;">Plan Name</th>
+        <th style="width: 10%">Price</th>
+        <th style="width: 80%">Features</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr style="height: 40px">
+        <td style="font-weight: bold;">Basic</td>
+        <td style="font-style: italic;">$9.99/month</td>
+        <td style="">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
+      </tr>
+      <tr style="height: 40px;">
+        <td style="font-weight: bold;">Pro</td>
+        <td style="font-style: italic;">$19.99/month</td>
+        <td style="">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+      </tr>
+      <tr style="height:40px;">
+        <td style="font-weight: bold;">Premium</td>
+        <td style="font-style: italic;">$49.99/month</td>
+        <td style="">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat.</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+
+</html>
